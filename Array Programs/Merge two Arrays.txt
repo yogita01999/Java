@@ -1,0 +1,55 @@
+import java.util.*; 
+
+class MergeTwoArrays{ 
+
+    public static void main(String[] args) { 
+
+         int arr1[] = {10, 26, 40, 57, 70}; 
+
+         int arr2[] = {78, 89, 34, 56}; 
+
+         int arr1_leng = arr1.length; 
+
+         int arr2_leng = arr2.length; 
+
+         int mergeArr_leng = arr1.length + arr2.length; 
+
+         int mergeArr[] = new int[mergeArr_leng]; 
+
+         
+
+        // insert first array element into mergeArr 
+
+        for(int i=0; i< arr1.length; i++) 
+
+        { 
+
+            mergeArr[i] = arr1[i]; 
+
+        } 
+
+         // insert second array element into mergeArr 
+
+        for(int j=0; j<arr2.length; j++) 
+
+        { 
+
+            mergeArr[arr1_leng + j] = arr2[j]; 
+
+        } 
+
+         //print array 
+
+         for(int i =0; i< mergeArr.length; i++) 
+
+         { 
+
+             System.out.print(mergeArr[i] + " "); 
+
+         } 
+
+    } 
+
+} 
+
+ 

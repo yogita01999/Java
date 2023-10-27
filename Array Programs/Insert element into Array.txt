@@ -1,0 +1,39 @@
+import java.util.*; 
+
+class InsertElementIntoArr{ 
+
+    public static void main(String[] args) { 
+
+         int arr[] = {10, 26, 40, 57, 70, 95, 10}; 
+
+         Scanner sc = new Scanner(System.in); 
+
+         System.out.println("Enter the item you want to insert"); 
+
+         int position = 3; 
+
+         int element = sc.nextInt(); 
+
+         for(int i = arr.length-1; i< position-1; i++) 
+
+         { 
+
+             arr[i] = arr[i-1]; 
+
+         } 
+
+         arr[position-1] = element; 
+
+         //print array 
+
+         for(int i =0; i< arr.length; i++) 
+
+         { 
+
+             System.out.print(arr[i] + " "); 
+
+         } 
+
+    } 
+
+} 
