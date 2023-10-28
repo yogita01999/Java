@@ -14,8 +14,6 @@ class ArmstrongNo {
 
         num = sc.nextInt(); 
 
-         
-
         temp = num; 
 
         //count number of digits 
@@ -23,23 +21,18 @@ class ArmstrongNo {
         while(temp!=0) 
 
         { 
-
             digits++; 
 
             temp = temp /10; 
-
         } 
 
          System.out.println("No of digits in number:" + digits); 
-
-         
 
         int sum =0; 
 
         while(temp!=0) 
 
         { 
-
             //get last digit of num 
 
             rem = temp % 10; 
@@ -53,25 +46,16 @@ class ArmstrongNo {
         } 
 
         
-
         if(num == sum) 
 
         { 
-
             System.out.println("Armstrong no"); 
-
         } 
-
         else 
-
         { 
-
             System.out.println("is not Armstrong no"); 
-
         } 
-
          
-
     } 
 
 } 
