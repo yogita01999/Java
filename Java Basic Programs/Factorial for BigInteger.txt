@@ -1,0 +1,37 @@
+import java.util.*; 
+
+import java.math.BigInteger; 
+
+class BigIntFactorial { 
+
+    public static void main(String[] args) { 
+
+        int num; 
+
+        BigInteger inc = new BigInteger("1"); 
+
+        BigInteger fact = new BigInteger("1"); 
+     
+
+        Scanner sc = new Scanner(System.in); 
+
+        System.out.println("Enter number to calculate its factorial:"); 
+
+        num = sc.nextInt(); 
+     
+
+        for(int i =1; i<=num; i++) 
+
+        { 
+
+            fact = fact.multiply(inc); 
+
+            inc = inc.add(BigInteger.ONE); 
+
+        } 
+
+        System.out.println(num + "!=" + fact); 
+
+    } 
+
+} 

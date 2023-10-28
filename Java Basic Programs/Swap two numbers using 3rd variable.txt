@@ -1,0 +1,39 @@
+import java.util.*; 
+
+class Swap2noUsing3rdVariable{ 
+
+    public static void main(String[] args) { 
+
+        Scanner sc = new Scanner(System.in); 
+
+        System.out.println("Enter two numbers x and y"); 
+
+        int temp; 
+
+        int x = sc.nextInt(); 
+
+        int y = sc.nextInt(); 
+
+         
+
+        System.out.println("Numbers before swapping:"+ x +" "+ y); 
+
+         
+
+        //Swap numbers 
+
+        temp = x; 
+
+        x = y; 
+
+        y = temp; 
+
+        System.out.println("Numbers after swapping:" + x +" "+ y); 
+
+         
+
+    } 
+
+} 
+
+ 

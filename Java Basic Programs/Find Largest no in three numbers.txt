@@ -1,0 +1,53 @@
+import java.util.*; 
+
+class LargestNum{ 
+
+    public static void main(String[] args) { 
+
+        Scanner sc = new Scanner(System.in); 
+
+        System.out.println("Enter three numbers:");   
+
+        int x = sc.nextInt(); 
+
+        int y = sc.nextInt(); 
+
+        int z = sc.nextInt(); 
+
+         
+
+        if(x > y && x > z) 
+
+        { 
+
+            System.out.println("x=" +x +" " + "is greater number"); 
+
+        } 
+
+        else if(y > x && y > z){ 
+
+            System.out.println("y=" +y +" "+ "is greater number"); 
+
+        } 
+
+        else if(z > x && z > y) 
+
+        { 
+
+            System.out.println("z=" +z + "is greater number"); 
+
+        } 
+
+        else 
+
+        { 
+
+            System.out.println("Entered numbers are not distinct"); 
+
+        } 
+
+     
+
+    } 
+
+} 
